@@ -2,7 +2,7 @@
 
 Este projeto é uma implementação em **Java** de um simulador de Autômato Finito Determinístico (AFD). Desenvolvido como trabalho para a disciplina de Linguagens Formais e Autômatos (LFA), o programa é capaz de ler as configurações de um autômato a partir de um arquivo e verificar se determinadas palavras (sequências de caracteres) pertencem ou não à linguagem definida.
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 
 O objetivo principal é implementar um programa que reconheça linguagens regulares por meio de autômatos finitos. A representação computacional do autômato é feita através de uma **matriz de transição**, que é carregada dinamicamente via leitura de arquivo de texto (`.csv`).
 
@@ -14,7 +14,7 @@ O projeto foi configurado para reconhecer palavras sobre o alfabeto **Σ = {a, b
 
 ---
 
-## 🏗️ Estrutura do Código
+##  Estrutura do Código
 
 O projeto foi construído utilizando o paradigma de Orientação a Objetos e está dividido em 3 classes principais:
 
@@ -24,7 +24,7 @@ O projeto foi construído utilizando o paradigma de Orientação a Objetos e est
 
 ---
 
-## 📂 Formato de Configuração dos Autômatos
+##  Formato de Configuração dos Autômatos
 
 Os autômatos são carregados através de arquivos `.csv` localizados na raiz do projeto. O formato padronizado para a leitura é o seguinte:
 
@@ -38,25 +38,20 @@ Os autômatos são carregados através de arquivos `.csv` localizados na raiz do
 3;2
 1;3
 3;3
+```
+## Como Executar
 
+### Pré-requisitos
+* Java Development Kit (JDK) 17 ou superior.
+* IDE compatível (NetBeans, Eclipse, IntelliJ) ou Maven instalado na máquina.
 
-Como Executar
-Pré-requisitos
-Java Development Kit (JDK) 17 ou superior.
-
-IDE compatível (NetBeans, Eclipse, IntelliJ) ou Maven instalado na máquina.
-
-Passos para rodar
-Clone o repositório ou faça o download do projeto.
-
-Certifique-se de que os arquivos .csv (ex: Automato1.csv) estejam localizados na raiz do projeto (fora da pasta src).
-
-Abra a classe TrabalhoLFA01.java e altere o nome do arquivo na variável caminho para o autômato que deseja testar:
-
-Java
-String caminho = "Automato1.csv"; // Altere aqui para testar L2, L3 ou L4
-Compile e execute o projeto.
-
-No terminal, digite a palavra formada por 'a's e 'b's e pressione Enter para ver o resultado.
-
-Digite sair a qualquer momento para encerrar o programa.
+### Passos para rodar
+1. Clone o repositório ou faça o download do projeto.
+2. Certifique-se de que os arquivos `.csv` (ex: `Automato1.csv`) estejam localizados na **raiz do projeto** (fora da pasta `src`).
+3. Abra a classe `TrabalhoLFA01.java` e altere o nome do arquivo na variável `caminho` para o autômato que deseja testar:
+   ```java
+   String caminho = "Automato1.csv"; // Altere aqui para testar L2, L3 ou L4
+   ```
+4. Compile e execute o projeto.
+5. No terminal, digite a palavra formada por 'a's e 'b's e pressione `Enter` para ver o resultado.
+6. Digite `sair` a qualquer momento para encerrar o programa.
